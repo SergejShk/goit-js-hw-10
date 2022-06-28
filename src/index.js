@@ -16,7 +16,7 @@ refs.inputRef.addEventListener('input', debounce(onFormSubmit, DEBOUNCE_DELAY));
 
 function onFormSubmit(e) {
   e.preventDefault();
-  searchQuery = e.target.value.trim();
+  const searchQuery = e.target.value.trim();
 
   if (searchQuery === '') {
     clearMarkup();
