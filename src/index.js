@@ -41,7 +41,6 @@ function onFormSubmit(e) {
       const countryNameRef = refs.countryListRef.querySelector('.country-name');
       countryNameRef.classList.add('country-name--largest');
       renderCountryInfo(...data);
-      console.log(countryNameRef);
     })
     .catch(err => {
       console.log(err);
